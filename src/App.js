@@ -1,8 +1,5 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import CurrencyAPI from './currencyProvider';
-
-const api = new CurrencyAPI();
 
 async function getRates() {
     const rates = await fetch('/api/getRates').then(resp => resp.json());
